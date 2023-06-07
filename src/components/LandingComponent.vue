@@ -4,10 +4,12 @@
 		class="header1 cid-s48MCQYojq mbr-fullscreen mbr-parallax-background"
 		id="header1-f"
 	>
+  <div class="jarallax">
+
 		<div class="align-center container mb-3">
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-8">
-					<h1 class="mbr-section-title mbr-fonts-style mb-3 display-1">
+					<h1 class="mbr-section-title mbr-fonts-style mb-3 ">
 						Welcome to Composite Aeronatic Specialists LLC
 					</h1>
 
@@ -20,11 +22,18 @@
 				</div>
 			</div>
 		</div>
+  </div>
 	</section>
 </template>
 
 <script>
-export default {};
+import jarallax from "jarallax";
+
+export default {
+  mounted() {
+    jarallax(document.querySelectorAll(".jarallax"));
+  },
+};
 </script>
 
 <style scoped>
@@ -70,8 +79,36 @@ background-attachment: fixed;
   border-color: #516fa4 !important;
   color: #ffffff !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
 
+  
+}
+.jarallax {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .jarallax > .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .jarallax:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/casBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
 
 
 .btn {

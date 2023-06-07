@@ -1,5 +1,5 @@
 <template>
-	<div class="container px-4 py-5" id="featured-3">
+	<div class="container" id="featured-3">
 		<h1 class="pb-2">Why Choose Us</h1>
 		<div class="row g-4 py-5 justify-content-center">
 			<div class="feature col">

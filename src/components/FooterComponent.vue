@@ -85,7 +85,7 @@
 
 		<!-- Copyright -->
 		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-			© Composite Aeronatic Specialist
+			© Composite Aeronautic Specialist
 		</div>
 		<!-- Copyright -->
 	</footer>

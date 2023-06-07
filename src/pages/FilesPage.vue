@@ -7,7 +7,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">PDF 1</h5>
-						<a href="/ruta/pdf1.pdf" download class="btn btn-primary">Descargar</a>
+						<a href="/ruta/pdf1.pdf" download class="btn btn-primary">Download</a>
 					</div>
 				</div>
 			</div>
@@ -15,7 +15,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">PDF 2</h5>
-						<a href="/ruta/pdf2.pdf" download class="btn btn-primary">Descargar</a>
+						<a href="/ruta/pdf2.pdf" download class="btn btn-primary">Download</a>
 					</div>
 				</div>
 			</div>
@@ -23,7 +23,7 @@
 				<div class="card">
 					<div class="card-body">
 						<h5 class="card-title">PDF 3</h5>
-						<a href="/ruta/pdf3.pdf" download class="btn btn-primary">Descargar</a>
+						<a href="/ruta/pdf3.pdf" download class="btn btn-primary">Download</a>
 					</div>
 				</div>
 			</div>

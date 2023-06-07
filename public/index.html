@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		
 		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
 		<title><%= htmlWebpackPlugin.options.title %></title>
 		<!-- Font Awesome -->
@@ -22,6 +23,11 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" media="all" href="https://unpkg.com/vue-cool-lightbox/dist/vue-cool-lightbox.min.css" />
+		<style>
+			html {
+  scroll-behavior: smooth;
+}
+		</style>
 	</head>
 	<body>
 		<noscript>
@@ -45,4 +51,30 @@
 	Vue.component('vue-cool-lightbox', window.CoolLightBox.default)
 	</script>
 	</body>
+	<script>
+		$(document).ready(function(){
+  // Agregar desplazamiento suave a todos los enlaces
+  $("a").on('click', function(event) {
+
+    // Asegurarse de que esta propiedad se establezca solo en los enlaces internos
+    if (this.hash !== "") {
+      // Prevenir comportamiento de enlace predeterminado
+      event.preventDefault();
+
+      // Almacenar el hash
+      var hash = this.hash;
+
+      // Usar método animate de jQuery para agregar desplazamiento suave
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Agregar hash (#) a la URL cuando se haya terminado de desplazar (comportamiento predeterminado de la acción de clic)
+        window.location.hash = hash;
+      });
+    } // Fin del if
+  });
+});
+
+	</script>
 </html>

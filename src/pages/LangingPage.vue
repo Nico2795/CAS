@@ -11,18 +11,16 @@
 		<div class="ourExpertise">
 			<ourExpertise />
 		</div>
-		<div class="solutions">
-			<SolutionComponentsVue></SolutionComponentsVue>
-		</div>
 		<div class="testimonial">
 			<TestimonialComponent></TestimonialComponent>
-		</div>
-		<div class="team">
-			<TeamComponentVue></TeamComponentVue>
 		</div>
 		<div class="slider">
 			<SliderComponentVue />
 		</div>
+		<div class="team">
+			<TeamComponentVue></TeamComponentVue>
+		</div>
+
 		<!-- 		<div class="contact">
 			<ContactComponent/>
 		</div> -->
@@ -36,7 +34,6 @@
 import LandingComponentVue from "../components/LandingComponent.vue";
 import NavBarVue from "../components/NavBar.vue";
 import ourExpertise from "@/components/ourExpertise.vue";
-import SolutionComponentsVue from "@/components/SolutionComponents.vue";
 import TestimonialComponent from "@/components/TestimonialComponent.vue";
 import TeamComponentVue from "@/components/TeamComponent.vue";
 import SliderComponentVue from "@/components/SliderComponent.vue";
@@ -47,7 +44,6 @@ export default {
 		LandingComponentVue,
 		NavBarVue,
 		ourExpertise,
-		SolutionComponentsVue,
 		TestimonialComponent,
 		TeamComponentVue,
 		SliderComponentVue,
@@ -70,24 +66,24 @@ export default {
 	height: 100vh;
 }
 
-.ourExpertise {
-	height: 50vh;
-	margin-top: 10px;
-}
-.solutions {
-	margin-top: 10px;
-	margin-bottom: 10rem;
+@media screen and (max-width: 768px) {
+	.ourExpertise {
+		min-height: 50vh;
+	}
+	.testimonial {
+		margin-top: 1rem;
+	}
 }
 
-@media screen and (max-width: 768px) {
-	.solutions {
-		margin-top: 10rem;
+@media screen and (max-width: 576px) {
+	.ourExpertise {
+		min-height: 30vh;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.ourExpertise {
-		margin-bottom: 20rem;
+		margin-bottom: 5rem;
 	}
 }
 
@@ -104,11 +100,18 @@ export default {
 }
 
 .team {
-	margin-top: 10rem;
+	margin-top: 1rem;
 }
 
 .footer {
 	margin-top: 50px;
 	bottom: 0;
+}
+
+.testimonial{
+	margin-bottom: 6rem;
+}
+.slider{
+	margin-bottom: 6rem;
 }
 </style>

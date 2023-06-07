@@ -124,11 +124,16 @@ export default {
 	name: "ContactComponent",
 };
 </script>
+<script></script>
 
 <style scoped>
 section {
 	width: 70vw;
 	margin: auto;
 	height: 50vh;
+}
+
+.form-control{
+	border: solid 1px grey;
 }
 </style>

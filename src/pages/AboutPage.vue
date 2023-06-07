@@ -6,11 +6,8 @@
         <div class="about">
             <AboutCasComponentVue/>
         </div>
-        <div class="missionVission">
-            <MissionVisionVue/>
-        </div>
         <div class="choose">
-            <ChooseUs/>
+            <ChooseUsVue/>
         </div>
         <div class="footer">
 			<FooterComponentVue/>
@@ -22,16 +19,14 @@
 import NavBarVue from '@/components/NavBar.vue'
 import FooterComponentVue from '@/components/FooterComponent.vue'
 import AboutCasComponentVue from '@/components/AboutCasComponent.vue'
-import MissionVisionVue from '@/components/MissionVision.vue'
-import ChooseUs from '@/components/ChooseUs.vue'
+import ChooseUsVue from '@/components/ChooseUs.vue'
 export default {
     name:"AboutPage",
 components:{
     AboutCasComponentVue,
     NavBarVue,
     FooterComponentVue,
-    MissionVisionVue,
-    ChooseUs
+    ChooseUsVue
 }
 }
 </script>
@@ -39,9 +34,6 @@ components:{
 <style scoped>
 
 
-.about{
-
-}
 
 .footer{
     position: relative;
@@ -57,4 +49,8 @@ components:{
 			height: fit-content; /* Cambias el margen inferior a 2px */
 		}
 	}
+
+.about{
+    margin-bottom: 70px;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand ms-5" href="/">
       <img
@@ -21,7 +21,7 @@
       <i class="fas fa-bars"></i>
     </button>
     <div class="collapse  navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto bg-white">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/" @click="setActiveButton">Home</a>
         </li>
@@ -29,10 +29,10 @@
           <a class="nav-link" href="/#solutions" @click="setActiveButton" >Solutions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#team" @click="setActiveButton">Our Team</a>
+          <a class="nav-link" href="/#products" @click="setActiveButton">Our Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/#products" @click="setActiveButton">Our Products</a>
+          <a class="nav-link" href="/#team" @click="setActiveButton">Our Team</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about" @click="setActiveButton">About Us</a>
@@ -72,7 +72,6 @@ export default {
 
 @media (max-width: 768px) {
   .navbar-nav {
-    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -90,7 +89,6 @@ export default {
 
 .navbar-nav{
   gap: 40px;
-  margin-right: 7.5rem;
 }
 
 .navbar-brand img{

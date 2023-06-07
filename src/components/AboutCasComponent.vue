@@ -21,70 +21,53 @@
 				data-mdb-slide-to="1"
 				aria-label="Slide 2"
 			></button>
-			<button
-				type="button"
-				data-mdb-target="#carouselBasicExample"
-				data-mdb-slide-to="2"
-				aria-label="Slide 3"
-			></button>
-			<button
-				type="button"
-				data-mdb-target="#carouselBasicExample"
-				data-mdb-slide-to="3"
-				aria-label="Slide 4"
-			></button>
 		</div>
 
 		<!-- Inner -->
 		<div class="carousel-inner">
 			<!-- Single item -->
+			<div class="row">
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-6">
+
+				</div>
+			</div>
 			<div class="carousel-item active">
+				<div class="carousel-caption">
+					<h1>Mission</h1>
+					<br>
+					<br>
+					<br>
+					<h3>We aim to offer custom solutions for Aircraft Composites, delivering quality and value to build strong customer relationships.</h3>
+					<br>
+					<br>
+				</div>
 				<img
-					src="../assets/AboutCasAssets/Plane1.jpg"
+					src="../assets/SolutionsAssets/Mission.jpg"
 					class="plane1 d-block w-100"
 					alt="Sunset Over the City"
 				/>
-				<div class="carousel-caption d-none d-md-block">
-					<h3>Composite Aeronautic Specialists LLC: Your trusted partner for aircraft spare parts and composite material solutions.</h3>
-					<p></p>
-				</div>
+
 			</div>
 
-			<!-- Single item -->
-			<div class="carousel-item">
-				<img
-					src="../assets/AboutCasAssets/30Years.jpg"
-					class="d-block w-100"
-					alt="Canyon at Nigh"
-				/>
-				<div class="carousel-caption d-none d-md-block">
-					<h3>With 30+ years of experience, our dedicated professionals provide the highest quality, up-to-date materials to meet customer and FAA requirements.</h3>
-					<p></p>
-				</div>
-			</div>
 
 			
 			<!-- Single item -->
 			<div class="carousel-item">
 				<img
-					src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+					src="../assets/SolutionsAssets/Vision.jpg"
 					class="d-block w-100"
 					alt="Cliff Above a Stormy Sea"
 				/>
-				<div class="carousel-caption d-none d-md-block">
-					<h3>Our expertise is in overhaul and repair of aircraft parts and specialized in composite material production.</h3>
-					<p></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img
-					src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
-					class="d-block w-100"
-					alt="Cliff Above a Stormy Sea"
-				/>
-				<div class="carousel-caption d-none d-md-block">
-					<h3>We offer guaranteed, high-quality service tailored to each client's needs. Our commitment to excellence ensures that your aircraft runs smoothly with the best products and services.</h3>
-					<p></p>
+				<div class="carousel-caption ">
+					<h1>Vision</h1>
+					<br>
+					<br>
+					<h3>Our goal is to grow and lead in the Aircraft Composite industry by providing high-quality solutions, earning customer trust and loyalty, and being profitable and competitive.</h3>
+					
+					<br>
 				</div>
 			</div>
 		</div>
@@ -118,16 +101,26 @@ export default {};
 
 
 .carousel-item{
-	height: 95vh !important;
+	height: 100vh !important;
 }
 
 @media (max-width: 768px) {
 		.carousel-item{
-			height: 30vh !important;
-			width: 100vw !important; /* Cambias el margen inferior a 2px */
+			margin-top: 20%;
+			height: 50% !important;
+			width: 200% !important;; /* Cambias el margen inferior a 2px */
+		}
+		.carousel-caption{
+			font-size: 20%;
+			text-align: center;
 		}
 	}
 
+
+.carousel-caption{
+	text-align: start;
+	width: 30%;
+}
 
 
 
