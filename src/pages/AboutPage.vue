@@ -51,6 +51,6 @@ components:{
 	}
 
 .about{
-    margin-bottom: 70px;
+    margin-bottom: 70px; /* Hola */
 }
 </style>
